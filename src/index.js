@@ -16,6 +16,13 @@ const thelist = (
   </ul>
   );
 
+const puppy = require('random-puppy');
+
+puppy()
+    .then(url => {
+        console.log(url);
+    })
+
 ReactDOM.render(
     heading, 
     document.getElementById('root')

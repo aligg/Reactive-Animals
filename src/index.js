@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 const heading = (<div className="big">
         <h1>Learning ALL the things!</h1>
+        <h2>{Math.PI.toFixed(20)}</h2>
     </div>
     );
 

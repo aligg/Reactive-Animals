@@ -1,20 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// const heading = (<div className="big">
-//         <h1>Learning ALL the things!</h1>
-//         <h2>{Math.PI.toFixed(20)}</h2>
-//     </div>
+
+class TheHeadingClass extends React.Component {
+    render() {
+        return (<div className="big">
+        <h1>Learning ALL the things!</h1>
+        <h2>{Math.PI.toFixed(20)}</h2>
+    </div>
+    );
+    }
+}
+
+
+///display list of puppies using map()////
+// class ThePuppyClass extends React.Component {
+//     render() {  return (
+//         <h1>sup</h1>)
+
+//     }
+// }
+
+//const puppies = ['Slinky', 'Buddy', 'Habibi'];
+// const puppyLis = puppies.map(puppy =>
+//     <li>{puppy}</li>
 //     );
 
-// const thelist = (
-//   <ul>
-//     <li>This</li>
-//     <li>is</li>
-//     <li>a</li>
-//     <li>list</li>
-//   </ul>
-//   );
+
+// ReactDOM.render(<ul>{puppyLis}</ul>, 
+//       document.getElementById('root'));
+
+
 
 // const puppy = require('random-puppy');
 
@@ -47,21 +63,22 @@ import ReactDOM from 'react-dom';
 
 
 
-////use ternary operator to randomly generate a dog or cat/////
+// ////use ternary operator to randomly generate a dog or cat/////
 
-function coinToss () {
-  // Randomly return either 'heads' or 'tails'.
-  return Math.random() < 0.5 ? 'heads' : 'tails';
-}
+// function coinToss () {
+//   // Randomly return either 'heads' or 'tails'.
+//   return Math.random() < 0.5 ? 'heads' : 'tails';
+// }
 
-const pics = {
-  kitty: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg',
-  doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
-};
+// const pics = {
+//   kitty: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg',
+//   doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
+// };
 
-const img = <img src={pics[coinToss() ==='heads' ? 'kitty' : 'doggy']} height="400"/>;
+// const img = <img src={pics[coinToss() ==='heads' ? 'kitty' : 'doggy']} height="400"/>;
 
 ReactDOM.render(
-    img, 
+    <TheHeadingClass />,
+    //<ThePuppyClass />,
     document.getElementById('root')
 );

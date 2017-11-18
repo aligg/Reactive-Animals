@@ -33,6 +33,8 @@ class Kitty extends React.Component {
             );
     }
 }
+
+
 class Puppies extends React.Component {
     render() {  
         const puppies = ['Slinky', 'Buddy', 'Habibi'];

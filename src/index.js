@@ -33,6 +33,18 @@ class Kitty extends React.Component {
             );
     }
 }
+class Puppies extends React.Component {
+    render() {  
+        const puppies = ['Slinky', 'Buddy', 'Habibi'];
+        const puppyLis = puppies.map(puppy =>
+             <li>{puppy}</li>
+                        );
+
+        return (
+        <ul>{puppyLis}</ul>
+        );
+    }
+}
 
 
 class ProfilePage extends React.Component {
@@ -41,6 +53,7 @@ class ProfilePage extends React.Component {
             <Navbar />
             <h1> Learning ALL the things!</h1>
             <Kitty />
+            <Puppies />
 
         </div>);
     }
@@ -48,21 +61,8 @@ class ProfilePage extends React.Component {
 
 
 ///display list of puppies using map()////
-// class ThePuppyClass extends React.Component {
-//     render() {  return (
-//         <h1>sup</h1>)
-
-//     }
-// }
-
-//const puppies = ['Slinky', 'Buddy', 'Habibi'];
-// const puppyLis = puppies.map(puppy =>
-//     <li>{puppy}</li>
-//     );
 
 
-// ReactDOM.render(<ul>{puppyLis}</ul>, 
-//       document.getElementById('root'));
 
 
 

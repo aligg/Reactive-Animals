@@ -62,49 +62,7 @@ class ProfilePage extends React.Component {
 }
 
 
-///display list of puppies using map()////
-
-
-
-
-
-// const puppy = require('random-puppy');
-
-// puppy().then(url => {
-//         console.log(url);
-//     })
-
-// ReactDOM.render(
-//     heading, 
-//     document.getElementById('root')
-//     );
-
-// // ReactDOM.render(thelist, document.getElementById('thingtwo'));
-
-
-
-
-
-// ReactDOM.render(kitty, document.getElementById('root'));
-
-
-
-// ////use ternary operator to randomly generate a dog or cat/////
-
-// function coinToss () {
-//   // Randomly return either 'heads' or 'tails'.
-//   return Math.random() < 0.5 ? 'heads' : 'tails';
-// }
-
-// const pics = {
-//   kitty: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg',
-//   doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
-// };
-
-// const img = <img src={pics[coinToss() ==='heads' ? 'kitty' : 'doggy']} height="400"/>;
-
 ReactDOM.render(
     <ProfilePage />,
-    //<ThePuppyClass />,
     document.getElementById('root')
 );

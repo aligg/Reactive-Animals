@@ -18,6 +18,29 @@ return (
     }
 }
 
+class Button extends React.Component {
+  render() {
+    return (
+      <button onClick={this.props.onClick}>
+        Click for miaus
+      </button>
+    );
+  }
+}
+
+class Talker extends React.Component {
+  handleClick() {
+    let speech = '';
+    for (let i = 0; i < 1000; i++) {
+      speech += 'miau ';
+    }
+    alert(speech);
+  }
+  
+  render() {
+    return <Button onClick={this.handleClick} />;
+  }
+}
 
 class Kitty extends React.Component {
     render() {
@@ -62,6 +85,7 @@ class ProfilePage extends React.Component {
             <h1>Random Cute</h1>
             <Kitty />
             <Puppies />
+            <Talker />
 
         </div>);
     }

@@ -2,13 +2,47 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-class TheHeadingClass extends React.Component {
+class Navbar extends React.Component {
     render() {
-        return (<div className="big">
-        <h1>Learning ALL the things!</h1>
-        <h2>{Math.PI.toFixed(20)}</h2>
-    </div>
-    );
+        const pages = ['work', 'adventure', 'contact'];
+        const navLinks = pages.map(page => {
+            return(<a href={'/' + page}>{page}
+                    </a>
+                    )
+        });
+return <nav> {navLinks} </nav>;
+    }
+}
+
+
+class Kitty extends React.Component {
+    render() {
+        function makeDoggy(e) {
+            e.target.setAttribute('src', 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg');
+            e.target.setAttribute('alt', 'doggy');
+                                };
+        const kitty = (
+                <img onClick={makeDoggy}
+                src="https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg" 
+                alt="kitty"
+                height="400" />
+);
+        return (<div>
+            {kitty}
+            </div>
+            );
+    }
+}
+
+
+class ProfilePage extends React.Component {
+    render() {
+        return (<div>
+            <Navbar />
+            <h1> Learning ALL the things!</h1>
+            <Kitty />
+
+        </div>);
     }
 }
 
@@ -45,19 +79,9 @@ class TheHeadingClass extends React.Component {
 
 // // ReactDOM.render(thelist, document.getElementById('thingtwo'));
 
-// function makeDoggy(e) {
-//   // Call this extremely useful function on an <img>.
-//   // The <img> will become a picture of a doggy.
-//   e.target.setAttribute('src', 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg');
-//   e.target.setAttribute('alt', 'doggy');
-// }
 
-// const kitty = (
-//     <img onClick={makeDoggy}
-//         src="https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg" 
-//         alt="kitty"
-//         height="400" />
-// );
+
+
 
 // ReactDOM.render(kitty, document.getElementById('root'));
 
@@ -78,7 +102,7 @@ class TheHeadingClass extends React.Component {
 // const img = <img src={pics[coinToss() ==='heads' ? 'kitty' : 'doggy']} height="400"/>;
 
 ReactDOM.render(
-    <TheHeadingClass />,
+    <ProfilePage />,
     //<ThePuppyClass />,
     document.getElementById('root')
 );

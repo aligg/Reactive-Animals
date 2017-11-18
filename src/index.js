@@ -41,7 +41,6 @@ class Talker extends React.Component {
     return <Button onClick={this.handleClick} />;
   }
 }
-
 class Kitty extends React.Component {
     render() {
         function makeDoggy(e) {

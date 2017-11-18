@@ -5,13 +5,16 @@ import './index.css';
 
 class Navbar extends React.Component {
     render() {
-        const pages = ['work', 'adventure', 'contact'];
+        const pages = ['about', 'home'];
         const navLinks = pages.map(page => {
-            return(<a href={'/' + page}>{page}
-                    </a>
-                    )
+            return(<a href={'/' + page}>   {page}</a>
+                    );
         });
-return <nav> {navLinks} </nav>;
+return (
+    <nav> 
+    {navLinks} 
+    </nav>
+    );
     }
 }
 
@@ -44,7 +47,9 @@ class Puppies extends React.Component {
                         );
 
         return (
-        <ul>{puppyLis}</ul>
+        <ul>
+        {puppyLis}
+        </ul>
         );
     }
 }
@@ -54,7 +59,7 @@ class ProfilePage extends React.Component {
     render() {
         return (<div>
             <Navbar />
-            <h1> Learning ALL the things!</h1>
+            <h1>Random Cute</h1>
             <Kitty />
             <Puppies />
 

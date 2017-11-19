@@ -5,6 +5,7 @@ A simple web app built with React to randomly generate pictures of cute animals 
 
 ### Home ###
 The main page looks like this:
+
 <kbd><img align="center" src="/public/home.png" width="600" align="center" /></kbd>
 
 ### Questions? ###

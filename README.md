@@ -1,7 +1,7 @@
 # Reactive Animals
 
 ### TL:DR ###
-A simple web app built with React to randomly generate pictures of cute animals and toggle to a new one on-click. Extra features thrown in for the purpose of learning and miaus.
+A simple web app built with React to randomly generate pictures of cute animals and toggle to a new one on-click. Extra features thrown in for the purpose of learning and miaus. This is a project I made within the first week of learning React, before I began to use React full-time at work. 
 
 ### Home ###
 The main page looks like this:
